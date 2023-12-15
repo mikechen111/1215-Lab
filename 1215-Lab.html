@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+</style>
+
+<body>
+
+<script>
+var num1 = window.prompt("Please enter number1");
+var num2 = window.prompt("Please enter number2"); 
+
+if (num1>num2)
+{
+	document.writeln("<h1>firstInput > secondInput<br>");
+	document.body.style.backgroundColor = "lightblue";
+}
+else if (num1<num2)
+{
+	document.writeln("<h1>firstInput < secondInput<br>");
+	document.body.style.backgroundColor = "orange";
+}
+else
+{
+	document.writeln("<h1>firstInput == secondInput<br>");
+	document.body.style.backgroundColor = "lightyellow";
+}
+
+ function showNum1() 
+ {
+    alert("Number 1 is : " + num1);
+ }
+
+ function showNum2() 
+ {
+  	alert("Number 2 is : " + num2);
+ }
+</script>
+
+<button onclick="showNum1()">顯示 Number 1</button>
+<button onclick="showNum2()">顯示 Number 2</button>
+
+</body>
+
+</html>
